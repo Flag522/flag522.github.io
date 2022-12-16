@@ -31,8 +31,9 @@
 
 @font-face {
   font-family: 'smiley-sans';
-  src: url(https://unpkg.com/@chinese-fonts/dyh@1.1.0/dist/SmileySans-Oblique/result.css);
+  src: url(../SmileySans-Oblique.ttf.woff2) format("woff2");
 }
+
 h1,h2 {
   font-family: 'smiley-sans';
 }
