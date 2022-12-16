@@ -28,11 +28,11 @@
   --ifm-color-primary-lightest: #b4d2ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-/* 
+
 @font-face {
   font-family: 'smiley-sans';
-  src: url(../SmileySans-Oblique.ttf.woff2);
-} */
+  src: url(https://unpkg.com/@chinese-fonts/dyh@1.1.0/dist/SmileySans-Oblique/result.css);
+}
 h1,h2 {
-  font-family: 'Smiley Sans Oblique';
+  font-family: 'smiley-sans';
 }

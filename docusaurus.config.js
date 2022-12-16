@@ -4,8 +4,6 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
-import "@chinese-fonts/dyh/dist/SmileySans-Oblique/result.css";
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: '烽淋氨埂',
