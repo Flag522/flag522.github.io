@@ -43,6 +43,9 @@ const config = {
         },
         blog: {
           showReadingTime: true,
+          blogTitle: '',
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
         //   // editUrl:
@@ -68,7 +71,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'test',
             position: 'left',
             label: 'Tutorial',
           },
