@@ -1,41 +1,55 @@
-# Website
+---
+sidebar_position: 99999
+---
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+# 格式规范
 
-### Installation
+## 内容部分
 
-```
-$ yarn
-```
+文章标题使用**一级标题**标注。
 
-### Local Development
+文章内使用设立为**二级标题**的时间地点来生成目录。
 
-```
-$ yarn start
-```
+正文空白行需使用`<br/>`生成。
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+## 非内容部分
 
-### Build
+抬头需使用如下文本来标注本文在侧边栏列表的位置顺序。
 
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
+```markdown
+---
+sidebar_position: 3
+---
 ```
 
-Not using SSH:
+## 文章合辑
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+若要将某几篇文章归为一个合辑，需进行一下操作：
+
+1. 将文章放于同一文件夹内；
+2. 在文件夹内建立名为`_category_.json`的文件；
+3. json文件内容如下
+
+```json
+{
+  "label": "测试一下",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": ""
+  }
+}
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+> 其中各键值对代表的内容为：
+>
+> 1. label：本合辑在侧边栏处显示的名称；
+> 2. position：本合辑在侧边栏处的位置；
+> 3. type：（暂不知其具体内容，勿进行改动）；
+> 4. description：本合辑简介，在合辑列表页面显示。
+
+> 若未建立此json文件，则不会生成合计列表页面（依然会生成次级列表，上一级列表名为文件夹名）。
+
+## 注
+
+虽无严格要求，但推荐使用英文为各文件、文件夹命名。
