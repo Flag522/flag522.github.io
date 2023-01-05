@@ -34,6 +34,17 @@
   src: url(../SmileySans-Oblique.ttf.woff2);
 }
 
+@font-face {
+  font-family: 'HSS';
+  src: url(../HarmonyOS_Sans_SC_Regular.woff2);
+}
+
 h1,h2 {
-  font-family: 'smiley-sans';
+  font-family: smiley-sans;
+}
+p {
+  font-family: HSS;
+}
+body {
+  user-select: none;
 }
