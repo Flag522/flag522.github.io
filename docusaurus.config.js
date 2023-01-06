@@ -44,8 +44,8 @@ const config = {
         blog: {
           showReadingTime: true,
           blogTitle: '',
-          blogSidebarTitle: '最近博文',
-          blogSidebarCount: 7,
+          blogSidebarTitle: ' ',
+          blogSidebarCount: 1,
         //   // Please change this to your repo.
         //   // Remove this to remove the "edit this page" links.
         //   // editUrl:
