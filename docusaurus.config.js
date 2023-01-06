@@ -121,9 +121,9 @@ const config = {
           //   ],
           // },
         ],
-        copyright: `Written by <a href="https://mp.weixin.qq.com/s?__biz=MzI3Mzg3NTY1OQ==&mid=2247483945&idx=1&sn=5e1727f543b2b59d4bc2e91b5cf6b0d8&chksm=eb1dd58ddc6a5c9b50e05fa2c3af1aeff764768aaa9467b9cb15558702e7791c2c6355376f80#rd"target="_blank"
-        >Flag550</a>, Built with <a href="https://www.docusaurus.cn/" target="_blank"
-        >Docusaurus</a>.`,
+        copyright: `本站内容由 <a href="https://mp.weixin.qq.com/s?__biz=MzI3Mzg3NTY1OQ==&mid=2247483945&idx=1&sn=5e1727f543b2b59d4bc2e91b5cf6b0d8&chksm=eb1dd58ddc6a5c9b50e05fa2c3af1aeff764768aaa9467b9cb15558702e7791c2c6355376f80#rd"target="_blank"
+        >Flag550</a> 编写，使用 <a href="https://www.docusaurus.cn/" target="_blank"
+        >Docusaurus</a> 构建。`,
       },
       docs: {
         sidebar: {
