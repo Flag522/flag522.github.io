@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/flag-a.png',
+  favicon: 'img/flag-b.png',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -63,19 +63,19 @@ const config = {
     ({
       navbar: {
         hideOnScroll: true,
-        title: '',
+        title: '烽淋氨埂',
         logo: {
           alt: 'FLAG',
-          src: 'img/flag-a.png',
+          src: 'img/flag-b.png',
         },
         items: [
           {
             type: 'doc',
             docId: 'test',
             position: 'left',
-            label: 'Tutorial',
+            label: '小说',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '博客', position: 'left'},
         ],
       },
       footer: {
