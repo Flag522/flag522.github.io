@@ -8,12 +8,12 @@
     <subtitle>烽淋氨埂 Blog</subtitle>
     <icon>https://flag522.github.io/img/flag-min.png</icon>
     <entry>
-        <title type="html"><![CDATA[Meaning of each tag]]></title>
+        <title type="html"><![CDATA[标签列表]]></title>
         <id>about</id>
         <link href="https://flag522.github.io/blog/about"/>
         <updated>2038-01-19T03:14:00.000Z</updated>
-        <summary type="html"><![CDATA[---]]></summary>
-        <content type="html"><![CDATA[<hr><ul><li>本文用于解释各标签的含义；</li><li>点击上方标题或阅读更多查看详细内容。</li></ul><br><p><strong>标签列表</strong></p><p><a href="/blog/tags/note">note</a>：写作记录</p><p><a href="/blog/tags/chatter">chatter</a>：日常碎碎念</p>]]></content>
+        <summary type="html"><![CDATA[由于自带的查看所有标签页面在分类中文标签时会以第一个汉字为分类依据。]]></summary>
+        <content type="html"><![CDATA[<p>由于自带的<strong>查看所有标签</strong>页面在分类中文标签时会以第一个汉字为分类依据。</p><p>故使用英文标签，并修改发布时间手动置顶本博客对各标签含义做出解释。</p><h1>标签列表</h1><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="chatter日常碎碎念"><a href="/blog/tags/chatter">chatter</a>：日常碎碎念<a class="hash-link" href="#chatter日常碎碎念" title="标题的直接链接">​</a></h3><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="note写作记录"><a href="/blog/tags/note">note</a>：写作记录<a class="hash-link" href="#note写作记录" title="标题的直接链接">​</a></h3>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[1月5日记]]></title>
@@ -22,7 +22,7 @@
         <updated>2023-01-05T21:36:00.000Z</updated>
         <summary type="html"><![CDATA[睡前随便写写东西、发发牢骚，顺便试试这个博客功能。]]></summary>
         <content type="html"><![CDATA[<p>睡前随便写写东西、发发牢骚，顺便试试这个博客功能。</p><hr><h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="正文">正文<a class="hash-link" href="#正文" title="标题的直接链接">​</a></h2><p>写小说的事情在重新改大纲这件事情上拖了又拖。</p><p>阳康之后觉得不能再拖了，不然可能真的没机会完成了。</p><p>这周抽了点时间把除了大结局以外的细纲写好了。顺了一遍发现在大结局有很重要剧情的人物前面塑造的太少了，以ta做结尾可能没法产生感情的共鸣。于是今天把前面的大纲又重新修改了一遍，明天再捋一遍看看。</p>]]></content>
-        <category label="note" term="note"/>
         <category label="chatter" term="chatter"/>
+        <category label="note" term="note"/>
     </entry>
 </feed>
