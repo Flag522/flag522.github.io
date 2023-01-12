@@ -39,12 +39,21 @@
   src: url(../HarmonyOS_Sans_SC_Regular.woff2);
 }
 
-h1,h2 {
+h1,h2,h3,h4 {
   font-family: smiley-sans;
 }
-p {
-  font-family: HSS;
+
+big {
+  font-family: 楷体,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  /* font-size: 1.30rem; */
 }
+
 body {
+  font-family: HSS;
   user-select: none;
+}
+
+blockquote {
+  border-left: 2px solid #5096ff;
 }

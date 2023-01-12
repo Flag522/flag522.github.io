@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/flag-b.png',
+  favicon: 'img/flag-red-blue.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -29,6 +29,29 @@ const config = {
     locales: ['zh-Hans'],
   },
 
+  plugins: [
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'test1',
+        path: 'test1',
+        routeBasePath: 'test1',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'balderdash',
+        path: 'balderdash',
+        routeBasePath: 'balderdash',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }),
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -36,20 +59,12 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           blogTitle: '',
-          blogSidebarTitle: ' ',
-          blogSidebarCount: 1,
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   // editUrl:
-        //   //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          blogSidebarTitle: '全部博客',
+          blogSidebarCount: 'ALL',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -62,68 +77,30 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        hideOnScroll: true,
-        title: '烽淋氨埂',
+        // hideOnScroll: true,
+        title: '',
         logo: {
           alt: 'FLAG',
-          src: 'img/flag-b.png',
+          src: 'img/flag-red-blue.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'test',
-            position: 'left',
-            label: '小说',
-          },
+          // {
+          //   type: 'doc',
+          //   docId: 'Introduction',
+          //   position: 'left',
+          //   label: '小说',
+          // },
+          {to: '/Introduction', label: '烽淋氨埂', position: 'left'},
+          {to: '/balderdash/overture', label: '《空谷幽呓》', position: 'left', activeBaseRegex: `/balderdash/`,},
+          // {to: '/test1/intro11', label: 'test', position: 'left', activeBaseRegex: `/test1/`,},
           {to: '/blog', label: '博客', position: 'left'},
         ],
       },
       footer: {
         style: 'dark',
-        links: [
-          // {
-          //   title: 'Docs',
-          //   items: [
-          //     {
-          //       label: 'Tutorial',
-          //       to: '/docs/intro',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'Community',
-          //   items: [
-          //     {
-          //       label: 'Stack Overflow',
-          //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-          //     },
-          //     {
-          //       label: 'Discord',
-          //       href: 'https://discordapp.com/invite/docusaurus',
-          //     },
-          //     {
-          //       label: 'Twitter',
-          //       href: 'https://twitter.com/docusaurus',
-          //     },
-          //   ],
-          // },
-          // {
-          //   title: 'More',
-          //   items: [
-          //     {
-          //       label: 'Blog',
-          //       to: '/blog',
-          //     },
-          //     {
-          //       label: 'GitHub',
-          //       href: 'https://github.com/facebook/docusaurus',
-          //     },
-          //   ],
-          // },
-        ],
-        copyright: `本站内容由 <a href="https://mp.weixin.qq.com/s?__biz=MzI3Mzg3NTY1OQ==&mid=2247483945&idx=1&sn=5e1727f543b2b59d4bc2e91b5cf6b0d8&chksm=eb1dd58ddc6a5c9b50e05fa2c3af1aeff764768aaa9467b9cb15558702e7791c2c6355376f80#rd"target="_blank"
-        >Flag550</a> 编写，使用 <a href="https://www.docusaurus.cn/" target="_blank"
-        >Docusaurus</a> 构建。`,
+        copyright: `Copyright © 2023 <a href="https://mp.weixin.qq.com/s?__biz=MzI3Mzg3NTY1OQ==&mid=2247483945&idx=1&sn=5e1727f543b2b59d4bc2e91b5cf6b0d8&chksm=eb1dd58ddc6a5c9b50e05fa2c3af1aeff764768aaa9467b9cb15558702e7791c2c6355376f80#rd"target="_blank"
+        >Flag550</a>, Built with <a href="https://www.docusaurus.cn/" target="_blank"
+        >Docusaurus</a>.`,
       },
       docs: {
         sidebar: {

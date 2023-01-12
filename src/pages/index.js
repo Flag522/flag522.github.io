@@ -13,15 +13,16 @@ function HomepageHeader() {
     <header className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
-        <h2 className="hero__subtitle">随便写些不着实际的东西</h2>
+        <h1 className="hero__subtitle">与其为了哗众取宠胡言乱语昧己瞒心</h1>
+        <h1 className="hero__subtitle">不如做个跳梁小丑聊以自娱逍遥自在</h1>
         {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
-        {/* <div className={styles.buttons}>
+        <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            className="button button--primary button--lg button--outline"
+            to="/Introduction">
+            👄 妄言妄听 👂
           </Link>
-        </div> */}
+        </div>
       </div>
     </header>
   );

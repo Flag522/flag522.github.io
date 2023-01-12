@@ -34,42 +34,43 @@ const FeatureList = [
   //   ),
   // },
   {
-    title: 'The Gift for Someone',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: '　　余生平寡嗜好，凡饮酒、度曲、摴蒲，可以接群居之欢者，一无能焉，文史外无以自娱，乃广采游心骇耳之事，妄言妄听，记而存之，非有所惑也。',
+    Svg: require('@site/static/img/flag-red-blue.svg').default,
     description: (
       <>
-        自古以来，依山傍水、交通便利的清宁市便是享誉中外的经济、文化中心。但随着时间的推移、环境的改变和历史的演进，她渐渐失去了往日的繁华。
-        <br/>
-        二十多年以来，随着“负熵”和“幻迪”两家高新科技公司先后在此建立，以及当地高等院校的发展，这座历史悠久的国际化大都市，又重现往日的生机与活力。
-        <br/>
-        这个故事的主舞台，便是这座古老城市的年轻一隅。
+        ——清·袁枚《子不语·自序》
       </>
     ),
   },
-  {
-    title: '万能牙医',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        假装这个是《万能牙医》的简介：
-        <br/>
-        德鲁伊和萨满的爱恨纠葛
-        <br/>
-        还有四象神兽跟魔法师的乱入
-      </>
-    ),
-  }
+  // {
+  //   title: '万能牙医',
+  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+  //   description: (
+  //     <>
+  //       假装这个是《万能牙医》的简介：
+  //       <br/>
+  //       德鲁伊和萨满的爱恨纠葛
+  //       <br/>
+  //       还有四象神兽跟魔法师的乱入
+  //     </>
+  //   ),
+  // }
 ];
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--6')}>
+    <div className={clsx('col col--12')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
-        <h2>{title}</h2>
       </div>
-      <div className="text--left padding-horiz--md">
-        <p>{description}</p>
+
+      <div className="text--left">
+        <big>{title}</big>
+      </div>
+
+      <div className="text--right padding-horiz--md">
+        <br></br>
+        <big>{description}</big>
       </div>
     </div>
   );
