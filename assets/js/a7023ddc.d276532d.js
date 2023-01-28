@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkflag_550=self.webpackChunkflag_550||[]).push([[1713],{3457:e=>{e.exports=JSON.parse('[{"label":"note","permalink":"/blog/tags/note","count":3},{"label":"chatter","permalink":"/blog/tags/chatter","count":2}]')}}]);
