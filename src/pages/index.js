@@ -1,43 +1,74 @@
-import React from 'react';
-import clsx from 'clsx';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import Link from '@docusaurus/Link'
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
+import styles from './index.module.css'
+import HomepageFeatures from '../components/HomepageFeatures'
+import Head from '@docusaurus/Head'
+import HeroImg from '../../static/img/flag-red-blue.png'
 
-import styles from './index.module.css';
+const svgList = []
+const Svg = ({ Svg, color, title, link }) => {
+  return (
+    <a href={link} target='_blank'>
+      <Svg className={styles.svg} style={{ fill: color }} />
+    </a>
+  )
+}
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext()
   return (
-    <header className={clsx('hero hero--dark', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <h1 className="hero__subtitle">与其为了哗众取宠胡言乱语昧己瞒心</h1>
-        <h1 className="hero__subtitle">不如做个跳梁小丑聊以自娱逍遥自在</h1>
-        {/* <p className="hero__subtitle">{siteConfig.tagline}</p> */}
+    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <div className='container'>
+        <h1 className='hero__title'>{siteConfig.title}</h1>
+        <p className='hero__subtitle'>{siteConfig.tagline}</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg"
-            to="/Introduction">
-            👄 妄言妄听 👂
+          <Link className='button button--secondary button--lg' to='/Introduction'>
+            🖱Click Here!
           </Link>
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+function MyHero() {
   return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <HomepageHeader />
+    <div className={styles.myHeroContainer}>
+      <div className={styles.leftContainer}>
+        <h1 className={styles.leftContainer_h1}>
+          烽淋氨埂<br/>
+          FLAG550
+        </h1>
+        <h2 className={styles.leftContainer_h2}>
+            与其为了哗众取宠胡言乱语昧己瞒心
+        </h2>
+        <h2 className={styles.leftContainer_h2}>
+            不如做个跳梁小丑聊以自娱逍遥自在
+        </h2>
+        <div className={styles.buttonContainer}>
+            <div className={styles.buttons}>
+                <Link className='button button--block button--outline button--primary button--lg' to='/Introduction'>
+                👄 妄言妄听 👂
+                </Link>
+            </div>
+        </div>
+      </div>
+      <div className={styles.rightContainer}>
+        <img src={HeroImg} alt='HeroImg' />
+      </div>
+    </div>
+  )
+}
+export default function Home() {
+  const { siteConfig } = useDocusaurusContext()
+  return (
+    <Layout title='Home'>
       <main>
-        <HomepageFeatures />
+        <MyHero />
       </main>
     </Layout>
-  );
+  )
 }

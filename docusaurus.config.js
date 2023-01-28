@@ -77,8 +77,9 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
+        // style: 'dark',
         // hideOnScroll: true,
-        title: '',
+        title: '烽淋氨埂',
         logo: {
           alt: 'FLAG',
           src: 'img/flag-red-blue.svg',
@@ -90,10 +91,10 @@ const config = {
           //   position: 'left',
           //   label: '小说',
           // },
-          {to: '/Introduction', label: '烽淋氨埂', position: 'left'},
-          {to: '/balderdash/overture', label: '《空谷幽呓》', position: 'left', activeBaseRegex: `/balderdash/`,},
+          {to: '/Introduction', label: 'ℹ️关于本站', position: 'right'},
+          {to: '/balderdash/overture', label: '📚空谷幽呓', position: 'right', activeBaseRegex: `/balderdash/`,},
           // {to: '/test1/intro11', label: 'test', position: 'left', activeBaseRegex: `/test1/`,},
-          {to: '/blog', label: '博客', position: 'left'},
+          {to: '/blog', label: '📰博客　', position: 'right'},
         ],
       },
       footer: {
