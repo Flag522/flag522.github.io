@@ -63,7 +63,7 @@ const config = {
         blog: {
           showReadingTime: true,
           blogTitle: '',
-          blogSidebarTitle: '全部博客',
+          blogSidebarTitle: '列表',
           blogSidebarCount: 'ALL',
         },
         theme: {
@@ -91,10 +91,10 @@ const config = {
           //   position: 'left',
           //   label: '小说',
           // },
-          {to: '/Introduction', label: 'ℹ️关于本站', position: 'right'},
-          {to: '/balderdash/overture', label: '📚空谷幽呓', position: 'right', activeBaseRegex: `/balderdash/`,},
+          {to: '/Introduction', label: 'ℹ️关于本站', position: 'left'},
+          {to: '/balderdash/overture', label: '📚空谷幽呓', position: 'left', activeBaseRegex: `/balderdash/`,},
           // {to: '/test1/intro11', label: 'test', position: 'left', activeBaseRegex: `/test1/`,},
-          {to: '/blog', label: '📰博客　', position: 'right'},
+          {to: '/blog', label: '📒写作笔记　', position: 'left'},
         ],
       },
       footer: {

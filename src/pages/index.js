@@ -40,7 +40,7 @@ function MyHero() {
       <div className={styles.leftContainer}>
         <h1 className={styles.leftContainer_h1}>
           烽淋氨埂<br/>
-          FLAG550
+          <span style={{ color: 'var(--ifm-color-primary)' }}>FLAG550</span>
         </h1>
         <h2 className={styles.leftContainer_h2}>
             与其为了哗众取宠胡言乱语昧己瞒心
@@ -50,7 +50,7 @@ function MyHero() {
         </h2>
         <div className={styles.buttonContainer}>
             <div className={styles.buttons}>
-                <Link className='button button--block button--outline button--primary button--lg' to='/Introduction'>
+                <Link className='button button--secondary button--lg' to='/Introduction'>
                 👄 妄言妄听 👂
                 </Link>
             </div>
