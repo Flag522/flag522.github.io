@@ -30,7 +30,7 @@
   padding: 0;
   flex-direction: row;
   width: 100%;
-  height: calc(100vh - 150.4px);
+  max-height: calc(100vh - 150.4px);
   overflow: hidden;
   padding: 2.5rem 3rem;
 }

@@ -35,8 +35,8 @@
 }
 
 @font-face {
-  font-family: 'HSS';
-  src: url(../HarmonyOS_Sans_SC_Regular.woff2);
+  font-family: 'mi';
+  src: url(../MiSans-Regular.woff2);
 }
 
 h1,h2,h3,h4 {
@@ -50,7 +50,7 @@ big {
 }
 
 body {
-  font-family: HSS;
+  font-family: mi;
   user-select: none;
 }
 
