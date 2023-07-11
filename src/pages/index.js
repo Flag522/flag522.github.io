@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '../components/HomepageFeatures'
 import Head from '@docusaurus/Head'
-import HeroImg from '../../static/img/flags.png'
+import HeroImg from '../../static/img/Flags.png'
 
 const svgList = []
 const Svg = ({ Svg, color, title, link }) => {
