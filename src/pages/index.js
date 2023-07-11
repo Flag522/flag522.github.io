@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
 import styles from './index.module.css'
 import HomepageFeatures from '../components/HomepageFeatures'
 import Head from '@docusaurus/Head'
-import HeroImg from '../../static/img/flag-red-blue.png'
+import HeroImg from '../../static/img/flags.png'
 
 const svgList = []
 const Svg = ({ Svg, color, title, link }) => {
@@ -48,12 +48,15 @@ function MyHero() {
         <h2 className={styles.leftContainer_h2}>
             不如做个跳梁小丑聊以自娱逍遥自在
         </h2>
+        <h2 className={styles.leftContainer_h2}>
+            <span style={{ color: 'var(--ifm-color-primary)' }}>妄言妄听</span>
+        </h2>
         <div className={styles.buttonContainer}>
-            <div className={styles.buttons}>
+            {/* <div className={styles.buttons}>
                 <Link className='button button--secondary button--lg' to='/Introduction'>
                 👄 妄言妄听 👂
                 </Link>
-            </div>
+            </div> */}
         </div>
       </div>
       <div className={styles.rightContainer}>

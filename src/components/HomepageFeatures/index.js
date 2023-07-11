@@ -35,7 +35,7 @@ const FeatureList = [
   // },
   {
     title: '　　余生平寡嗜好，凡饮酒、度曲、摴蒲，可以接群居之欢者，一无能焉，文史外无以自娱，乃广采游心骇耳之事，妄言妄听，记而存之，非有所惑也。',
-    Svg: require('@site/static/img/flag-red-blue.svg').default,
+    Svg: require('@site/static/img/flags.svg').default,
     description: (
       <>
         ——清·袁枚《子不语·自序》

@@ -35,25 +35,53 @@
 }
 
 @font-face {
-  font-family: 'mi';
+  font-family: 'xiahuaxian';
   src: url(../MiSans-Regular.woff2);
+}
+
+@font-face {
+  font-family: 'zhengwen';
+  src: url(../LXGWWenKai-Regular.woff2);
 }
 
 h1,h2,h3,h4 {
   font-family: smiley-sans;
-}
-
-big {
-  font-family: 楷体,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: bold;
-  /* font-size: 1.30rem; */
+  font-weight: 400;
 }
 
 body {
-  font-family: mi;
+  font-family: zhengwen;
   user-select: none;
 }
 
 blockquote {
   border-left: 2px solid #5096ff;
+  padding: 0 0 0 16px;
+}
+
+/* 下划线的句子、博客页面标签框中的文字、页脚文字、标题栏链接，这几处采用Misans */
+/* 博客列表底部的标签列表和“阅读更多”、目录页的底部也算作页脚，所以单独再把这几个设置回正文字体 */
+u {
+  font-family: xiahuaxian;
+  text-decoration: none;
+}
+
+footer {
+  font-family: xiahuaxian;
+}
+
+footer b {
+  font-family: zhengwen;
+}
+
+footer nav {
+  font-family: zhengwen;
+}
+
+.navbar__link {
+  font-family: xiahuaxian;
+}
+
+article ul li a {
+  font-family: xiahuaxian;
 }

@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/flag-red-blue.svg',
+  favicon: 'img/flags.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -82,7 +82,7 @@ const config = {
         title: '烽淋氨埂',
         logo: {
           alt: 'FLAG',
-          src: 'img/flag-red-blue.svg',
+          src: 'img/flaglr.png',
         },
         items: [
           // {
@@ -99,7 +99,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © 2023 <a href="https://mp.weixin.qq.com/s?__biz=MzI3Mzg3NTY1OQ==&mid=2247483945&idx=1&sn=5e1727f543b2b59d4bc2e91b5cf6b0d8&chksm=eb1dd58ddc6a5c9b50e05fa2c3af1aeff764768aaa9467b9cb15558702e7791c2c6355376f80#rd"target="_blank"
+        copyright: `Copyright © 2023 <a href="https://mmbiz.qpic.cn/mmbiz_jpg/vuGJ38BGDpkZ17hWQvAnHh438FicStoiamO9BdCRdzdT9mrf4Xf2ibEjrwdMkXwZ0RcXuia3NjEdaCQyByQZVDWW7g/0?wx_fmt=jpeg&wxfrom=3"target="_blank"
         >Flag550</a>, Built with <a href="https://www.docusaurus.cn/" target="_blank"
         >Docusaurus</a>.`,
       },

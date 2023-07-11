@@ -45,16 +45,18 @@
 
 .rightContainer img {
   margin: 0 auto;
-  width: 40vw;
-  height: 40vw;
+  width: min(40vw,80vh);
+  height: min(40vw,80vh);
   object-fit: contain;
 }
 
 .leftContainer_h1 {
-  font-size: 5rem;
+  font-size: max(8vh,5rem);
+  /* font-weight: bold; */
 }
 .leftContainer_h2 {
-  font-size: 2rem;
+  font-size: max(3vh,2rem);
+  /* font-weight: bold; */
 }
 .buttonContainer {
   display: flex;
@@ -108,12 +110,12 @@
   text-decoration: none;
   color: white;
 }
-@media screen and (max-width: 966px) {
+@media screen and (max-width: 996px) {
   .myHeroContainer {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 2.5rem 6rem;
+    padding: 0.5vh 6rem;
   }
   .leftContainer {
     padding: 2rem 0;
@@ -122,11 +124,11 @@
   }
   .leftContainer_h1 {
     text-align: center;
-    font-size: 4rem;
+    font-size: min(17vw,13vh);
   }
   .leftContainer_h2 {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: min(7vw,5vh);
   }
   .buttonContainer{
     justify-content: center;
